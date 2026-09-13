@@ -89,5 +89,5 @@ jobs:
       - name: Install dependencies
         run: pipenv install --dev
 
-      - name: Build backend
-        run: echo "Backend build validation successful"
+      - name: Build backend Docker image
+        run: docker build --tag mp-backend:ci .
