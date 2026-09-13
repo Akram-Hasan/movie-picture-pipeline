@@ -24,7 +24,7 @@
 # CMD uwsgi --http :5000 --master --enable-threads -s /var/www/app/app.sock --manage-script-name --mount /=app:app
 
 
-FROM public.ecr.aws/docker/library/python:3.10-slim
+FROM public.ecr.aws/docker/library/python:3.10-slim-bookworm
 
 ENV FLASK_RUN_HOST=0.0.0.0
 
