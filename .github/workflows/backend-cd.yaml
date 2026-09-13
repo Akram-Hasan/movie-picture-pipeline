@@ -131,7 +131,7 @@ jobs:
         working-directory: starter/backend/k8s
         run: |
           kustomize edit set image \
-            backend=${{ secrets.BACKEND_ECR_REPOSITORY }}:${{ github.sha }}
+            backend=743631835585.dkr.ecr.us-east-1.amazonaws.com/backend:${{ github.sha }}
 
       - name: Deploy backend
         working-directory: starter/backend/k8s
